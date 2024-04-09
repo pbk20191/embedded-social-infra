@@ -1,0 +1,6 @@
+[submodule "finn"]
+	path = finn
+	url = https://github.com/Xilinx/finn.git
+[submodule "PYNQ"]
+	path = PYNQ
+	url = https://github.com/Xilinx/PYNQ.git
