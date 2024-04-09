@@ -4,5 +4,5 @@
 	shallow = true
 [submodule "PYNQ"]
 	path = PYNQ
-	url = https://github.com/pbk20191/embedded-social-infra.git
+	url = https://github.com/pbk20191/PYNQ.git
 	shallow = true
