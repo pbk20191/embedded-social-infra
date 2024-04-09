@@ -1,0 +1,7 @@
+brevitas==0.10.2
+onnxoptimizer==0.3.13
+torchvision==0.17.2
+bitstring==4.1.4
+onnxruntime==1.17.1
+qonnx==0.3.0
+netron==7.5.8

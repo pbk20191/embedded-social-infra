@@ -1,3 +1,5 @@
-python-environment/.venv
+onnx-building/.venv
 !PYNQ/.devcontainer/*
 PYNQ/*
+**/__pycache__
+onnx-building/mnist-cnn/data
