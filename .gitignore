@@ -1,4 +1,3 @@
 python-environment/.venv
-!PYNQ/.devcontainer
-!PYNQ/.devcontainer/Dockerfile
+!PYNQ/.devcontainer/*
 PYNQ/*
