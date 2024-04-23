@@ -19,7 +19,7 @@ RUN groupadd --gid $USER_GID $USERNAME \
     #
     # [Optional] Add sudo support. Omit if you don't need to install software after connecting.
     && apt-get update \
-    && apt-get install -y sudo libatomic1 locales\
+    && apt-get install -y sudo libatomic1 locales python3-pip python3-venv \
     && echo $USERNAME ALL=\(root\) NOPASSWD:ALL > /etc/sudoers.d/$USERNAME \
     && chmod 0440 /etc/sudoers.d/$USERNAME
 
