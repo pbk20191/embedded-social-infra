@@ -40,6 +40,8 @@ pip install -r requirements.txt
 ```
 
 
+(torch의 경우 1.13.2 이상이기만 하면 버전이 상관없는 것으로 보이므로 선호하는 버전으로 재설치 권장)
+
 
 mnist-cnn 모델을 onnx로 추출하는 데모
 
