@@ -6,3 +6,4 @@
 	path = PYNQ
 	url = https://github.com/pbk20191/PYNQ.git
 	shallow = true
+	branch = module

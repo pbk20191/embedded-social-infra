@@ -29,6 +29,7 @@ RUN update-locale en_US.UTF-8
 RUN dpkg-reconfigure --frontend noninteractive locales
 
 
+WORKDIR /tmp/building
 RUN curl -Lk 'https://code.visualstudio.com/sha/download?build=stable&os=cli-linux-armhf' --output vscode_cli.tar.gz
 RUN tar -xf vscode_cli.tar.gz
 RUN mv code /usr/local/bin
