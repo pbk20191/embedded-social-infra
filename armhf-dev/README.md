@@ -13,34 +13,24 @@ PYNQ-Zynq는 armhf 아키텍처로 필요한 바이너리 배포반이 없는 �
 
 ## Getting Started <a name = "getting_started"></a>
 
-devcontainer 환경으로 vscode에서 open_in_container를 하면 됩니다. 또는 devcontainer/cli가 있다면 이 폴더 경로 내에서 `devcontainer build --workspace-folder . && devcontainer up --mount-workspace-git-root=false && devcontainer cd /workspace/armhf-dev && bash`으로 컨테이너를 빌드 및 실행하고, 
+devcontainer 환경으로 vscode에서 open_in_container를 하면 됩니다
 
-### Prerequisites
-
-What things you need to install the software and how to install them.
-
-```
-Give examples
-```
 
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running.
+도커가 에뮬레이팅 할 수 있도록 qemu-user-static 바이너리를 커널 영역에 링크합니다. (한번만 하면 됩니다.)
 
-Say what the step will be
-
-```
-Give the example
+```sh
+docker run --rm --privileged multiarch/qemu-user-static --reset -p yes
 ```
 
-And repeat
-
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo.
+vscode `open in devcontainer`로 접속해서 필요한 바이너리를 빌드하면 됩니다
 
 ## Usage <a name = "usage"></a>
 
-Add notes about how to use the system.
+예를 들어서 numpy 바이너리가 필요하다면...
+
+```sh
+git clone https://github.com/numpy/numpy.git && cd numpy && git submodule update --init
+python setup.py bdist_wheel 
+```
